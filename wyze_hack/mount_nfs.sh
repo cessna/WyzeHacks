@@ -95,6 +95,7 @@ cp $WYZEHACK_CFG /media/mmc/wyzehacks/config.inc
 $WYZEHACK_DIR/log_sync.sh &
 $WYZEHACK_DIR/auto_reboot.sh &
 $WYZEHACK_DIR/auto_archive.sh &
+$WYZEHACK_DIR/auto_delete.sh &
 
 # This seems to be useful to prevent reboot caused by wifi dropping.
 if [ "$PING_KEEPALIVE" == "1" ];then

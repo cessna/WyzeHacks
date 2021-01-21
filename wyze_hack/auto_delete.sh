@@ -19,6 +19,7 @@ do
         for SRC_FILE in `find "$SRC_DIR" -name *.mp4 2>/dev/null| grep -oE "[0-9]{2}/[0-9]{2}\.mp4$"`;
         do
             # delete file here
+            rm -f $SRC_DIR/$SRC_FILE
             # mv -n $SRC_DIR/$SRC_FILE $DST_DIR/$DST_FILE
         done
         rmdir $SRC_DIR/* $SRC_DIR
